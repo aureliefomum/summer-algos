@@ -7,3 +7,19 @@
 // });
 
 // SOLUTION:
+//2)
+function maxCharacter(str){
+    let charKeys ={}
+    
+    for (let char of str){
+      if(charKeys[char]){
+        charKeys[char]++
+        }else{
+          charKeys[char]=1
+         }   
+      }
+   let maxNum = Math.max(...Object.keys(charKeys).map(el => charKeys[el]))
+   for (let x in charKeys){
+     if(charKeys[x]===maxNum) return x
+     }
+   }
