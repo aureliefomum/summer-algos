@@ -2,5 +2,18 @@
 // write a function that returns it with the characters reversed. No 
 // Reverse Method (well brute force it first, but then no reverse method)! 
 	
+// SOLUTIONS:
+//1)
+function stringReverser(str){
+  let reversedStr = ''
+  for(let i=str.length-1; i>=0;i--){
+    reversedStr += str[i]
+    }
+  
+   return reversedStr
+  }
+  
+  console.log(stringReverser('abc'))//cba
 
+  
 
