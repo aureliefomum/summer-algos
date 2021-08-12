@@ -15,5 +15,13 @@ function stringReverser(str){
   
   console.log(stringReverser('abc'))//cba
 
-  
+    //2)
+    function stringReverser(str){
+      let reversedStr = ''
+      for(let char of str){
+        reversedStr = char + reversedStr
+        }
+      
+       return reversedStr
+      }
 
