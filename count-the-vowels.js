@@ -32,7 +32,19 @@ function countVowels(string) {
 console.log(countVowels(example1)) //expect 3
 console.log(countVowels(example2))  //expect 5
 
+// 2)
+function countVowelsRefactor(string) {
+    let counter = 0
+    let map = ["a", "e", "i", "o", "u"]
+    string.toLowerCase().split("").map(el => {
+        if (map.includes(el)){
+            counter++
+        }
+    })
+    return(counter)
+}
 
-    
+
+
 
 
