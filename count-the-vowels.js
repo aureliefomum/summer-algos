@@ -15,6 +15,23 @@ OUT: 3
 IN: "banana, apple"
 OUT: 5
 */
+//  SOLUTIONS:
+//1)
+let example1 = "banana"
+let example2 = "banana, apple"
+
+function countVowels(string) {
+    let counter = 0
+    string.toLowerCase().split("").map(el => {
+        if (el === "a" || el === "e"  || el === "i" || el === "o"  || el === "u"){
+            counter++
+        }
+    })
+    console.log(counter)
+}
+console.log(countVowels(example1)) //expect 3
+console.log(countVowels(example2))  //expect 5
+
 
     
 
