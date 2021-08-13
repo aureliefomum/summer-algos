@@ -44,6 +44,24 @@ function countVowelsRefactor(string) {
     return(counter)
 }
 
+//3)
+function countVowels(str) {
+    let counter = 0
+    let vowelsString = "aeiou"
+    for (let char of str ) {
+        if(vowelsString.toLowerCase().includes(char)){
+             counter++
+        }
+    }   
+    return counter
+}
+    
+
+
+
+
+
+    
 
 
 
