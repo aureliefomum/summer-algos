@@ -56,7 +56,10 @@ function countVowels(str) {
     return counter
 }
     
-
+//4) With regex
+function countVowels(str) {
+    return str.match(/[aeiou]/gi).length
+ }
 
 
 
