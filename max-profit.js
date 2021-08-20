@@ -13,3 +13,22 @@
 // Output: 0
 
 
+// SOLUTION:
+function maxProfit(arr){
+	let  minPrice = Number.POSITIVE_INFINITY
+	let maxProf =0
+
+for (let i=0; i<arr.length;i++){
+	 if(arr[i] < minPrice)
+	 {
+	   minPrice= arr[i];
+	 } else if(arr[i] - minPrice> maxProf    ){
+	   maxProf = arr[i] - minPrice
+	   
+	   }
+  
+	  }
+  return maxProf
+   }
+
+   console.log(maxProfit([7,1,5,3,6,4])) // Expected output:5
