@@ -31,6 +31,27 @@
 };
 
 
+//2)
+function checkJewels (jewels, stones){
 
+  let count =0
+  let cache={}
+  
+  for (let stone of stones){
+    cache[stone] = cache[stone] +1 || 1    
+    }
+  for (let jewel of jewels){
+    if(cache[jewel]){
+      count += cache[jewel]      
+    }
+    
+    }
+  
+  return count
+  }
+
+
+  
+  
 
 
