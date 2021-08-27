@@ -51,7 +51,23 @@ function checkJewels (jewels, stones){
   }
 
 
-  
+  //3)
+
+  function checkJewels (jewels, stones){
+
+    let count =0
+    let cache={}
+    for (let jewel of jewels){
+      cache[jewel]=true        
+      }
+    
+    for (let stone of stones){
+      if(cache[stone]){
+        count++
+      }
+    }
+    return count
+  }
   
 
 
