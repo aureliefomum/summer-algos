@@ -13,3 +13,17 @@
 // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+// SOLUTIONS:
+//1)
+function hasDuplicates(arr) {
+  let map = {}
+  for (let i=0; i < arr.length; i++) {
+    map[arr[i]] = map[arr[i]] + 1 || 1
+
+    if (map[arr[i]] > 1) {
+      return true
+    }
+  }
+  return false
+}
+
