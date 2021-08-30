@@ -27,3 +27,17 @@ function hasDuplicates(arr) {
   return false
 }
 
+//2)
+
+function hasDuplicates(nums) {
+  const numCount = {}
+
+ for (let integer of nums) {
+    if (numCount[integer]) {
+      return true
+    }else{
+      numCount[integer] = 1
+    }
+ }
+ return false
+}
