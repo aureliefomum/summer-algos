@@ -22,6 +22,7 @@
 // From: https://leetcode.com/problems/fibonacci-number/
 
 //SOLUTION:
+//1)
 function fib (n){
 
     let arr=[0,1]
@@ -30,3 +31,18 @@ function fib (n){
     }
    return arr[n]
 }
+
+//2) Recursive solution
+function fib (n){
+
+    if(n<2){
+       return n
+    }else{
+       return fib(n-1) + fib(n-2)
+    }
+}
+
+
+
+
+
