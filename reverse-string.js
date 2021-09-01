@@ -25,3 +25,16 @@ function stringReverser(str){
        return reversedStr
       }
 
+      
+
+//3) Recursive solution (1)
+
+function stringReverser(str){
+   if(!str){
+        return ""
+   }else{
+       return stringReverser(str.substring(1)) + str.charAt(0)
+   }
+
+
+}
