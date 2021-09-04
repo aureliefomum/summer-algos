@@ -17,3 +17,30 @@
 
 // From: https://leetcode.com/problems/majority-element/
 
+// SOLUTION:
+
+function majorityElement(arr){
+  let numsCount={}
+
+  for(let num of arr){
+      if (numsCount[num]){
+        numsCount[num]++
+      }else{
+        numsCount[num]=1
+      }
+
+  }
+   
+  let majorityNum = ""
+  let highestNum = 0
+
+  for(let x in numsCount){
+      if (numsCount[x] > highestNum){
+        majorityNum = x
+            highestNum = numsCount[x]
+
+      }
+  }
+    return majorityNum
+
+}
