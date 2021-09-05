@@ -30,6 +30,22 @@
 
 //SOLUTIONS:
 
-
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var numIdenticalPairs = function(numsArr) {
+    let pairsCount=0
+    let cache={}
+    for(let num of numsArr){
+        if(cache[num]){
+            pairsCount += cache[num]
+        }else{
+            cache[num] =0
+        }
+        cache[num]++
+    }
+    return pairsCount
+};
 
 
