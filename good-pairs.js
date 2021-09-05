@@ -28,7 +28,7 @@
 // 1 <= nums.length <= 100
 // 1 <= nums[i] <= 100
 
-//SOLUTIONS:
+//SOLUTION:
 
 /**
  * @param {number[]} nums
