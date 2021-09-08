@@ -8,3 +8,15 @@
 
 // From: https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd/
 
+// SOLUTION (Eucladian algorithm)
+
+function highestCommonDiv(num1, num2){
+    if(num2===0){
+        return num1
+    }else{
+        return highestCommonDiv(num2, num1 % num2)
+    }
+ 
+ 
+ 
+ }
