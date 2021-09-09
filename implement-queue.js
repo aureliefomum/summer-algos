@@ -19,4 +19,28 @@
 // As long as the tests pass, go for it!
 
 //SOLUTION:
-
+class Queue  {
+    // implement your Queue constructor here
+       constructor (){
+         this.queue = []
+       }
+         
+    
+    enqueue (item) {
+    // add item to the queue
+    return this.queue.push(item)
+      
+  };
+    dequeue () {
+    // remove item from the front of the queue and return its value
+    return this.queue.shift()
+  };
+    
+    size () {
+    // return number of items in queue so far
+    return this.queue.length
+  };
+    
+  };
+  
+  
