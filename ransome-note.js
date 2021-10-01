@@ -21,3 +21,36 @@
 //  });
 // });
 
+// SOLUTION:
+
+function ransom(note, magazine){
+  let hash={}
+  let magArr = magazine.split(" ")
+  
+  for (let i=0;i<magArr.length;i++){
+    if(!hash[magArr[i]]){
+      hash[magArr[i]] =1 
+      }else{
+        hash[magArr[i]]++
+        
+        } 
+    
+    }
+    let noteArr = note.split("")
+    let possible = true
+    
+    noteArr.forEach(word=>{
+      if(hash[word]){
+        hash[word]--;
+        
+      if(hash[word]< 0)
+      possible =false
+        } else possible = false;
+      
+      });
+      
+      return possible
+  }
+
+
+  
